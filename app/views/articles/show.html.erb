@@ -3,6 +3,13 @@
   <%= @article.title %>
 </p>
  
+ <p>
+  Tags:
+  <% @article.tags.each do |tag| %>
+    <%= link_to tag.name, tag_path(tag) %>
+  <% end %>
+</p>
+
 <p>
   <strong>Text:</strong>
   <%= @article.text %>
