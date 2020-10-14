@@ -8,6 +8,9 @@
   <%= comment.body %>
 </p>
 
+<p>Posted <%= distance_of_time_in_words(comment.article.created_at, comment.created_at) %> later</p>
+
+
 <p>
   <%= link_to 'Destroy Comment', [comment.article, comment],
                method: :delete,
