@@ -1,0 +1,14 @@
+<%= form_tag author_sessions_path, method: :post do %>
+
+    <%= label_tag :email %>
+    <%= text_field_tag :email %>
+
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+    
+
+    <%= submit_tag "Login" %>
+  
+<% end %>
+
+<%= link_to 'Back', articles_path %>
