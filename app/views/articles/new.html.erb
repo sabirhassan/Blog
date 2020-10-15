@@ -1,4 +1,4 @@
-<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+<%= form_with scope: :article, html: {multipart: true}, url: articles_path, local: true do |form| %>
  
   <% if @article.errors.any? %>
     <div id="error_explanation">
@@ -29,6 +29,11 @@
     <%= form.text_field :tag_list %>
   </p>
  
+  <p>
+    <%= form.label :image, "Attach an Image" %><br />
+    <%= form.file_field :image %>
+  </p>
+
   <p>
     <%= form.submit %>
   </p>
