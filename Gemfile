@@ -26,6 +26,9 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 
 gem "paperclip"
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
 
 
 # Reduces boot times through caching; required in config/boot.rb
