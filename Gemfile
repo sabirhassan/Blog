@@ -1,3 +1,5 @@
+gem 'dotenv-rails', groups: [:development, :test]
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -25,6 +27,8 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+#gem 'gem-that-requires-env-variables'
 gem "paperclip"
 gem 'devise'
 gem 'omniauth'
